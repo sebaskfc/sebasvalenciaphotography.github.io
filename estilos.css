@@ -1,0 +1,104 @@
+button {
+    font-size: 16px;
+    padding: 10px 20px;
+    border: none;
+    background-color: #007bff;
+    color: white;
+    cursor: pointer;
+    transition: transform 0.3s ease-in-out;
+}
+
+button:hover {
+    transform: scale(1.2);
+}
+
+
+@keyframes bounceFade {
+    0% { transform: translateY(-50px); opacity: 0; }
+    50% { transform: translateY(0); opacity: 1; }
+    100% { transform: translateY(0); opacity: 0; }
+}
+
+#banner img {
+    animation: bounceFade 3s infinite ease-in-out;
+}
+
+
+button {
+    background-color: #002fff; /* Color de WhatsApp */
+    color: white;
+    font-size: 16px;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    transition: transform 0.3s ease-in-out;
+}
+
+button:hover {
+    transform: scale(1.1);
+}
+
+
+@keyframes colorChange {
+    0% { border-color: red; }
+    25% { border-color: blue; }
+    50% { border-color: green; }
+    75% { border-color: yellow; }
+    100% { border-color: red; }
+}
+
+hr {
+    border: 4px solid red; /* Grosor y color inicial */
+    animation: colorChange 3s infinite alternate;
+}
+
+
+
+
+/* Configuración básica del banner reducido */
+#banner-movimiento {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 150px; /* Reducido para un banner más pequeño */
+    text-align: center;
+}
+
+/* Animación para el texto */
+@keyframes alternarTexto {
+    0%, 20% { opacity: 1; }
+    25%, 95% { opacity: 0; }
+}
+
+.moving-text {
+    opacity: 0;
+    animation: alternarTexto 6s infinite ease-in-out;
+    margin: 0; /* Elimina márgenes adicionales */
+}
+
+.moving-text:nth-child(1) {
+    animation-delay: 0s; /* Primer texto comienza primero */
+}
+
+.moving-text:nth-child(2) {
+    animation-delay: 2s; /* Segundo texto aparece después */
+}
+
+.moving-text:nth-child(3) {
+    animation-delay: 4s; /* Tercer texto aparece después */
+}
+
+
+body {
+    background-color: #edf8e5; /* Verde claro */
+    font-family: Arial, sans-serif;
+    text-align: center;
+    padding: 20px;
+}
+
+footer p {
+    font-weight: bold; /* Aplica negrita al texto dentro del footer */
+}
+
+
